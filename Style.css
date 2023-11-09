@@ -6,16 +6,6 @@ h1{
   color: black
   text-align: center;
 }
-.assign{
-    display: flex;
-    padding: 10px;
-    margin: 10px;
-    background: green;
-}
-.assign img {
-  width: 200px;
-  padding: 100px;
-}
 a {
  text-decoration: none; /* remove underlining on anchor tags */
  color: midnightblue; /* pick the color you want */
