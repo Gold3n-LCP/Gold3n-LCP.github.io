@@ -37,5 +37,5 @@ a {
 .assign img:hover {
  width: 200px;
  margin: 10px;
- border: 2px dotted yellow;
+ border: 2px dotted green;
 }
