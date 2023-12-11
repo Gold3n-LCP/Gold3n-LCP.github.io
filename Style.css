@@ -13,7 +13,7 @@ h1 {
 h1:hover {
  color: hotpink;
  text-align: center;
- 
+ width: 100%;
  display: block;
 }
 a {
