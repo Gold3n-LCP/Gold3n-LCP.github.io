@@ -27,7 +27,7 @@ a {
  border-radius: 20px;
  width: 100%;
  box-shadow: 8px 8px brown;
- display: block; /* instead of flex */
+ display: flex;
 }
 .assign img {
  width: 200px;
