@@ -1,0 +1,37 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(images/Beach-bg.jpeg);
+
+}
+
+/* Structure */
+#content {
+    background: #f2802e;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* Centers Horizontally */
+    border-radius: 20px;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none; /* Removes the Underline */
+    background: #2EE2F2;
+    color: brown;
+    padding: 5px;
+    border-radius: 5px;
+}
+#main-nav a:hover {
+    background: #774FB3;
+
+}
+
+/* Typography */
+h1 {
+    color: darkslategray;
+
+}
+
+.special {
+    color: darkgreen;
+}
