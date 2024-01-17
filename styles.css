@@ -1,0 +1,41 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: url(images/circuits-bg.jpg);
+}
+
+/* Structure (all of this code was hand-written. It is formatted
+similar to the example from Jan16, but it was not copy-pasted */
+#content {
+    background: navy;
+    padding: 10px;
+    width: 80%;
+    margin: auto; /* Center Horizontally */
+    border-radius: 20px;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none; /*Removes underline*/
+    background: steelblue;
+    color: #EBD31E;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+/* NEED MAIN NAV HOVER STILL*/
+
+/* Typography */
+h1 {
+    color: navajowhite;
+}
+h2 {
+    color: pink;
+}
+
+p {
+    color: powderblue;
+}
+
+.special {
+    color: darkolivegreen;
+}
