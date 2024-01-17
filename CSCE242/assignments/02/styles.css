@@ -1,16 +1,18 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(images/Beach-bg.jpeg);
+    background: url(images/roadPic.jpg);
 
 }
 
 /* Structure */
 #content {
     background: #f2802e;
-    padding: 5px;
+    padding: 10px;
     width: 80%;
     margin: auto; /* Centers Horizontally */
+    margin-top: 10px;
     border-radius: 20px;
+    color:rgb(1, 81, 81)
 }
 
 /* Navigation */
@@ -29,6 +31,23 @@ body {
 /* Typography */
 h1 {
     color: darkslategray;
+
+}
+
+/* Images */
+img {
+    max-width: 30%;
+    height: auto;
+    border: 10px;
+    padding: 2%;
+}
+
+/* Table */
+table,th, td {
+    border: 3px solid;
+    border-color: #36366B;
+    border-collapse: collapse;
+    padding: .00005%; /* Adding any more padding makes the text overlap the table lines */
 
 }
 
