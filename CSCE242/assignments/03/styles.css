@@ -24,6 +24,7 @@ body {
     margin-bottom: 10px;
     color: #260B01;
     border: darkgoldenrod;
+    margin: auto;
 }
 
 #main-lower {
@@ -32,6 +33,7 @@ body {
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin: auto;
 
 
 }
@@ -152,7 +154,6 @@ h2 {
         flex: 3;
     }
 }
-
 .rows img {
     max-width: 80%;
     display: block;
