@@ -34,8 +34,6 @@ body {
     border-radius: 5px;
     margin-bottom: 10px;
     margin: auto;
-
-
 }
 
 /* Main Navigation */
@@ -56,9 +54,6 @@ body {
     color: white;
 }
 
-
-
-
 /* Typography */
 h1 {
     color: #592C12;
@@ -72,43 +67,8 @@ h2 {
     color: #260B01;
 }
 
-
-@media only screen and (min-width: 768px) {
-    .rows {
-        display:flex;
-        flex-direction: column;
-        margin: auto;
-    }
-    .rows section {
-        padding: 5px 20px;
-        border: 2px;
-        border: 1px darkgoldenrod;
-    }
-    .rows .columns {
-        float: left;
-        padding: 20px;
-        border: 1px darkgoldenrod;
-    }
-    .one {
-        flex: 1;
-    }
-    .two {
-        flex: 2;
-    }
-    .three {
-        flex: 3;
-    }
-    .rows img {
-        display: block;
-        margin: auto;
-        float: left;
-    }
-}
-
-
-
 /*For larger resolutions */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .columns {
         display: flex;
         border: 2px solid darkgoldenrod;
@@ -128,40 +88,16 @@ h2 {
     .three {
         flex: 3;
     }
+    .four {
+        flex: 4;
+    }
+    .five {
+        flex: 5;
+    }
     .columns-content {
         margin-bottom: 10px;
     }
 }
-
-
-/*For larger resolutions */
-@media only screen and (min-width: 768px) {
-    .rows {
-        display: flex;
-        margin: auto;
-    }
-    .rows section {
-        padding: 5px 20px;
-        border: 2px;
-    }
-    .one, #main-nav li {
-        flex: 1;
-    }
-    .two {
-        flex: 2;
-    }
-    .three {
-        flex: 3;
-    }
-}
-.rows img {
-    max-width: 80%;
-    display: block;
-    margin: auto;
-}
-
-
-
 
 #main-nav li {
     text-align: center;
