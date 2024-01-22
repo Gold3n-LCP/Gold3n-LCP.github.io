@@ -5,11 +5,15 @@ body {
 
 /* Structure (all of this code was hand-written. It is formatted
 similar to the example from Jan16, but it was not copy-pasted */
-#content {
+#content,
+#main-header,
+#main-footer {
     background: navy;
     padding: 10px;
     width: 80%;
     margin: auto; /* Center Horizontally */
+    margin-top: 5px;
+    margin-bottom: 5px;
     border-radius: 20px;
 }
 
@@ -35,7 +39,73 @@ h2 {
 p {
     color: powderblue;
 }
+h3 {
+    color: springgreen;
+}
 
 .special {
     color: darkolivegreen;
+}
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        column-gap: 10px;
+
+        
+
+    }
+    .columns section {
+        padding: 5px 20px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        
+    }
+    .one,
+    #main-nav li {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .columns img {
+        min-width: 300px;
+        min-height: 200;
+        max-width: 300px;
+        max-height: 200px;
+        /* for centering */
+        display: block;
+        margin: auto;
+    }
+}
+
+.columns {
+    background: darkcyan;
+        padding: 10px;
+        width: 80%;
+        margin: auto; /* Center Horizontally */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .columns {
+        background: darkcyan;
+        padding: 10px;
+        width: 80%;
+        margin: auto; /* Center Horizontally */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+    }
+
+    
+}
+img {
+    max-width: 300px;
+    max-height: 200px;
+    min-width: 300px;
+    min-height: 200;
+    margin: auto;
 }
