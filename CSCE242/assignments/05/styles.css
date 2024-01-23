@@ -1,0 +1,143 @@
+:root {
+    --primary-color: #73010A;
+    --secondary-color: #000000;
+    --tertiary-color: #ECECEC;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:var(--background-color);
+}
+
+/* Structure (all of this code was hand-written. It is formatted
+similar to the example from Jan16, but it was not copy-pasted */
+#content,
+#main-header,
+#main-footer {
+    background: var(--primary-color);
+    padding: 10px;
+    width: 80%;
+    margin: auto; /* Center Horizontally */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+
+/* Navigation */
+#main-nav a {
+    text-decoration: none; /*Removes underline*/
+    background: steelblue;
+    color: var(--primary-color);
+    padding: 1px;
+    border-radius: 5px;
+}
+
+/* NEED MAIN NAV HOVER STILL*/
+
+/* Typography */
+h1 {
+    color: var(--secondary-color);
+}
+h2 {
+    color: pink;
+}
+
+p {
+    color: powderblue;
+}
+h3 {
+    color: springgreen;
+}
+
+.special {
+    color: darkolivegreen;
+}
+
+@media only screen and (min-width: 768px) {
+    .columns {
+        display: flex;
+        column-gap: 10px;
+
+        
+
+    }
+    .columns section {
+        padding: 5px 20px;
+        background-color: darkcyan;
+        border: 5px solid darkgoldenrod;
+        
+    }
+    .one,
+    #main-nav li {
+        flex: 1;
+    }
+    .two {
+        flex: 2;
+    }
+    .columns img {
+        min-width: 300px;
+        min-height: 200;
+        max-width: 300px;
+        max-height: 200px;
+        /* for centering */
+        display: block;
+        margin: auto;
+    }
+}
+
+.columns {
+    background: darkcyan;
+        padding: 10px;
+        width: 80%;
+        margin: auto; /* Center Horizontally */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .columns {
+        background: darkcyan;
+        padding: 10px;
+        width: 80%;
+        margin: auto; /* Center Horizontally */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+    }
+
+    
+}
+img {
+    max-width: 300px;
+    max-height: 200px;
+    min-width: 300px;
+    min-height: 200;
+    margin: auto;
+}
+
+#play-area {
+    width: 100%;
+    height: 400px;
+    background: magenta;
+    position: relative;
+}
+
+#block {
+    width: 150px;
+    height: 150px;
+    background: lightblue;
+    position: absolute; /* or position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+    top: 0%;
+    left: 0%;
+    animation-name: play;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+
+
+#block p {
+    text-align: center;
+    line-height: 150px;
+}
