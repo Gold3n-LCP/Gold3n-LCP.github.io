@@ -1,26 +1,103 @@
 :root {
     --primary-color: #73010A;
     --secondary-color: #000000;
-    --tertiary-color: #ECECEC;
+    --tertiary-color: #FFFFFF;
 }
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background:var(--background-color);
+    background:var(--tertiary-color);
+    margin: none;
 }
 
 /* Structure (all of this code was hand-written. It is formatted
 similar to the example from Jan16, but it was not copy-pasted */
-#content,
-#main-header,
-#main-footer {
+
+#main-header {
+    height: 25px;
+    position: relative;
+    background-color: var(--secondary-color);
+    line-height: 0px;
+    margin: -10px;
+    border: 0px;
+    color:var(--tertiary-color);
+}
+#main-header-block {
+    height: 25px;
+    background: var(--secondary-color);
+    position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+    display: flex;
+    }
+    #main-header-menu {
+        width: 50px;
+        height: 50px;
+        background: var(--secondary-color);
+        position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+        right: 90%;
+        display: flex;
+        }
+
+#main-header img {
+    margin: 5px;
+    max-width: 50px;
+    max-height: 50px;
+    min-width: 50px;
+    min-height: 50px;
+    
+}
+#main-header .columns {
+    background: var(--secondary-color);
+}
+
+
+#content{
+    background: var(--tertiary-color);
+    line-height: 0px;
+    margin: -10px;
+}
+#content-block {
+    margin-top: 45px;
+    height: 30px;
     background: var(--primary-color);
-    padding: 10px;
-    width: 80%;
-    margin: auto; /* Center Horizontally */
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 20px;
+    position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+    display: flex;
+    color:var(--tertiary-color)
+}
+#content-top-img {
+    display: flex;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    max-width: 90%;
+    height:auto;
+}
+#content-text {
+    display: flex;
+    margin: 10px;
+    line-height: 20px;
+    h2 {color:var(--primary-color)}
+    p {
+        font-size: larger;
+        
+    }
+}
+#content-highlights {
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: var(--tertiary-color);
+    line-height: 20px;
+    h4 {
+        color:var(--primary-color);
+    }
+    h3 {
+        color:var(--primary-color);
+    }
+}
+
+
+#main-footer {
+
 }
 
 /* Navigation */
@@ -35,23 +112,35 @@ similar to the example from Jan16, but it was not copy-pasted */
 /* NEED MAIN NAV HOVER STILL*/
 
 /* Typography */
-h1 {
-    color: var(--secondary-color);
+
+
+.columns {
+        display: flex;
 }
-h2 {
-    color: pink;
+.columns section {
+    border-color: aqua;
+}
+.one {
+    flex: 1;
+    border-color: aqua;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 3;
+}
+.four {
+    flex: 4;
+}
+.ten {
+    flex: 10;
 }
 
-p {
-    color: powderblue;
-}
-h3 {
-    color: springgreen;
-}
 
-.special {
-    color: darkolivegreen;
-}
+
+
+
 
 @media only screen and (min-width: 768px) {
     .columns {
@@ -74,70 +163,4 @@ h3 {
     .two {
         flex: 2;
     }
-    .columns img {
-        min-width: 300px;
-        min-height: 200;
-        max-width: 300px;
-        max-height: 200px;
-        /* for centering */
-        display: block;
-        margin: auto;
-    }
-}
-
-.columns {
-    background: darkcyan;
-        padding: 10px;
-        width: 80%;
-        margin: auto; /* Center Horizontally */
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 20px;
-}
-
-@media only screen and (max-width: 768px) {
-    .columns {
-        background: darkcyan;
-        padding: 10px;
-        width: 80%;
-        margin: auto; /* Center Horizontally */
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 20px;
-    }
-
-    
-}
-img {
-    max-width: 300px;
-    max-height: 200px;
-    min-width: 300px;
-    min-height: 200;
-    margin: auto;
-}
-
-#play-area {
-    width: 100%;
-    height: 400px;
-    background: magenta;
-    position: relative;
-}
-
-#block {
-    width: 150px;
-    height: 150px;
-    background: lightblue;
-    position: absolute; /* or position "static" or "absolute" or "relative" or "fixed" or "sticky" */
-    top: 0%;
-    left: 0%;
-    animation-name: play;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-
-
-
-#block p {
-    text-align: center;
-    line-height: 150px;
 }
