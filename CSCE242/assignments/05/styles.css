@@ -58,6 +58,8 @@ similar to the example from Jan16, but it was not copy-pasted */
     line-height: 0px;
     margin: -9px;
 }
+
+
 #content-menu {
     margin: 5px;
     background-color: var(--secondary-color);
@@ -78,8 +80,38 @@ similar to the example from Jan16, but it was not copy-pasted */
     margin-left: 20px;
     margin-bottom:10px;}
     margin-bottom: 15px;
-
+    }
+#columns-big {
+    .columns {
+        display: flex;
 }
+.columns section {
+    border-color: aqua;
+    margin:5px;
+}
+.one {
+    flex: 1;
+    border-color: aqua;
+}
+.two {
+    flex: 2;
+}
+.three {
+    flex: 3;
+}
+.four {
+    flex: 4;
+}
+.ten {
+    flex: 10;
+}
+}
+@media only screen and (min-width: 768px) {
+    #content-menu {display:none};
+    #content-menu2 {display: none};
+    #columns-big {display: none};
+}
+
 #content-block {
     margin-top: 45px;
     height: 30px;
@@ -334,12 +366,13 @@ display: flex;
         background: var(--secondary-color);
     }
     
-    
+    @media only screen and (max-width: 768px) {
     #content{
         background: var(--tertiary-color);
         line-height: 0px;
         margin: -9px;
     }
+    
     #content-menu {
         margin: 5px;
         background-color: var(--secondary-color);
@@ -360,7 +393,7 @@ display: flex;
         margin-left: 20px;
         margin-bottom:10px;}
         margin-bottom: 15px;
-    
+        }
     }
     #content-block {
         margin-top: 45px;
@@ -557,4 +590,8 @@ display: flex;
     }
     
     
+}
+
+@media only screen and (min-width: 768px) {
+
 }
