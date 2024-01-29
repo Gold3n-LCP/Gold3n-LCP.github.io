@@ -2,6 +2,9 @@
     --primary-color: #73010A;
     --secondary-color: #000000;
     --tertiary-color: #FFFFFF;
+    --quaternary-color: #C7C7C7;
+    --quinary-color: #5C5C5C;
+    --senary-color: #ECECEC;
 }
 
 body {
@@ -15,24 +18,24 @@ similar to the example from Jan16, but it was not copy-pasted */
 
 #main-header {
     height: 25px;
-    position: relative;
+    position: fixed;
     background-color: var(--secondary-color);
     line-height: 0px;
     margin: -10px;
-    border: 0px;
+    border-right: 0px transparent;
     color:var(--tertiary-color);
 }
 #main-header-block {
     height: 25px;
     background: var(--secondary-color);
-    position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+    position: fixed; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
     display: flex;
     }
     #main-header-menu {
         width: 50px;
         height: 50px;
         background: var(--secondary-color);
-        position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+        position: fixed; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
         right: 90%;
         display: flex;
         }
@@ -53,7 +56,29 @@ similar to the example from Jan16, but it was not copy-pasted */
 #content{
     background: var(--tertiary-color);
     line-height: 0px;
-    margin: -10px;
+    margin: -9px;
+}
+#content-menu {
+    margin: 5px;
+    background-color: var(--secondary-color);
+    h3 {color:var(--tertiary-color);
+        margin-left: 20px;}
+    h3:hover {color:var(--primary-color)}
+    h4 {color:var(--tertiary-color);
+        margin-left: 20px;
+        margin-top:0px;}
+    h4:hover {color:var(--primary-color)}
+}
+
+#content-menu2 {
+    border: 1px solid;
+    background: var(--quinary-color);
+    p {color: var(--quaternary-color);
+    font-size: smaller;
+    margin-left: 20px;
+    margin-bottom:10px;}
+    margin-bottom: 15px;
+
 }
 #content-block {
     margin-top: 45px;
@@ -94,11 +119,122 @@ similar to the example from Jan16, but it was not copy-pasted */
         color:var(--primary-color);
     }
 }
+#content-stats {
+    
+    border-left: 8px solid var(--primary-color);
+    
+    
+    
+    border-left-color: var(--primary-color);
+    h1 {
+        color: var(--primary-color);
+        margin-left: 10px;
+    }
+    h2 {
+        color: var(--primary-color);
+        margin-left: 10px;
+    }
+    h3 {
+        color: var(--quinary-color);
+        margin-left: 10px;
+    }
+    p {
+        color: var(--secondary-color);
+        margin-left: 10px;
+    }
+    
+#content-stats-1 {
+    border: solid;
+    
+    
+    border: 1px solid;
+    
+    }
+#content-stats-2 {
+    background-color: var(--senary-color);
+    margin-top: 20px;
+    
+    border-left: 8px;
+}
+}
+#content-bottom {
+    background-color: var(--senary-color);
+    margin-top: 10px;
+    margin-left: -2%;
+    margin-right: -2%;
+    border: 2px solid var(--senary-color);
+    line-height: 15px;
+}
+    
+
+    #content-bottom h3 {
+        color: var(--secondary-color);
+        margin-left: 20px;
+    }
+    #content-bottom p {
+        color:var(--secondary-color);
+        margin-left: 20px;
+    }
+    #content-bottom p:hover {
+        background-color:var(--primary-color);
+        color: var(--tertiary-color);
+    }
+
 
 
 #main-footer {
-
+background-color: var(--primary-color);
+color: var(--tertiary-color);
+margin: -2%;
+display: flex;
 }
+#hr {
+    display: flex;
+    border: 1px;
+    height: 0px;
+    background-color: var(--tertiary-color);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 0px;
+}
+#main-footer-top {
+    margin:auto;
+    text-align:center;
+}
+#main-footer .columns {
+    margin-top: 20px;
+    text-align:center;
+}
+#main-footer-container {
+    margin: auto;
+}
+
+#main-footer-img {
+    background:var(--tertiary-color);
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#main-footer-img:hover {
+    background-color: var(--secondary-color);
+}
+#main-footer-img .columns{
+    
+    display: flex;
+    text-align: left;
+}
+#main-footer-bottom {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+}
+#main-footer-bottom p {
+    font-size: x-small;
+}
+#main-footer-bottom .columns {
+        border-right: 1px;
+        border-color: var(--tertiary-color);
+    }
 
 /* Navigation */
 #main-nav a {
@@ -119,6 +255,7 @@ similar to the example from Jan16, but it was not copy-pasted */
 }
 .columns section {
     border-color: aqua;
+    margin:5px;
 }
 .one {
     flex: 1;
@@ -143,24 +280,281 @@ similar to the example from Jan16, but it was not copy-pasted */
 
 
 @media only screen and (min-width: 768px) {
-    .columns {
+    :root {
+        --primary-color: #73010A;
+        --secondary-color: #000000;
+        --tertiary-color: #FFFFFF;
+        --quaternary-color: #C7C7C7;
+        --quinary-color: #5C5C5C;
+        --senary-color: #ECECEC;
+    }
+    
+    body {
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        background:var(--tertiary-color);
+        margin: none;
+    }
+    
+    /* Structure (all of this code was hand-written. It is formatted
+    similar to the example from Jan16, but it was not copy-pasted */
+    
+    #main-header {
+        height: 25px;
+        position: fixed;
+        background-color: var(--secondary-color);
+        line-height: 0px;
+        margin: -10px;
+        border-right: 0px transparent;
+        color:var(--tertiary-color);
+    }
+    #main-header-block {
+        height: 25px;
+        background: var(--secondary-color);
+        position: fixed; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
         display: flex;
-        column-gap: 10px;
-
+        }
+        #main-header-menu {
+            width: 50px;
+            height: 50px;
+            background: var(--secondary-color);
+            position: fixed; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+            right: 90%;
+            display: flex;
+            }
+    
+    #main-header img {
+        margin: 5px;
+        max-width: 50px;
+        max-height: 50px;
+        min-width: 50px;
+        min-height: 50px;
         
-
+    }
+    #main-header .columns {
+        background: var(--secondary-color);
+    }
+    
+    
+    #content{
+        background: var(--tertiary-color);
+        line-height: 0px;
+        margin: -9px;
+    }
+    #content-menu {
+        margin: 5px;
+        background-color: var(--secondary-color);
+        h3 {color:var(--tertiary-color);
+            margin-left: 20px;}
+        h3:hover {color:var(--primary-color)}
+        h4 {color:var(--tertiary-color);
+            margin-left: 20px;
+            margin-top:0px;}
+        h4:hover {color:var(--primary-color)}
+    }
+    
+    #content-menu2 {
+        border: 1px solid;
+        background: var(--quinary-color);
+        p {color: var(--quaternary-color);
+        font-size: smaller;
+        margin-left: 20px;
+        margin-bottom:10px;}
+        margin-bottom: 15px;
+    
+    }
+    #content-block {
+        margin-top: 45px;
+        height: 30px;
+        background: var(--primary-color);
+        position: sticky; /* position "static" or "absolute" or "relative" or "fixed" or "sticky" */
+        display: flex;
+        color:var(--tertiary-color)
+    }
+    #content-top-img {
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+        max-width: 90%;
+        height:auto;
+    }
+    #content-text {
+        display: flex;
+        margin: 10px;
+        line-height: 20px;
+        h2 {color:var(--primary-color)}
+        p {
+            font-size: larger;
+            
+        }
+    }
+    #content-highlights {
+        margin-right: 10px;
+        margin-left: 10px;
+        background-color: var(--tertiary-color);
+        line-height: 20px;
+        h4 {
+            color:var(--primary-color);
+        }
+        h3 {
+            color:var(--primary-color);
+        }
+    }
+    #content-stats {
+        
+        border-left: 8px solid var(--primary-color);
+        
+        
+        
+        border-left-color: var(--primary-color);
+        h1 {
+            color: var(--primary-color);
+            margin-left: 10px;
+        }
+        h2 {
+            color: var(--primary-color);
+            margin-left: 10px;
+        }
+        h3 {
+            color: var(--quinary-color);
+            margin-left: 10px;
+        }
+        p {
+            color: var(--secondary-color);
+            margin-left: 10px;
+        }
+        
+    #content-stats-1 {
+        border: solid;
+        
+        
+        border: 1px solid;
+        
+        }
+    #content-stats-2 {
+        background-color: var(--senary-color);
+        margin-top: 20px;
+        
+        border-left: 8px;
+    }
+    }
+    #content-bottom {
+        background-color: var(--senary-color);
+        margin-top: 10px;
+        margin-left: -2%;
+        margin-right: -2%;
+        border: 2px solid var(--senary-color);
+        line-height: 15px;
+    }
+        
+    
+        #content-bottom h3 {
+            color: var(--secondary-color);
+            margin-left: 20px;
+        }
+        #content-bottom p {
+            color:var(--secondary-color);
+            margin-left: 20px;
+        }
+        #content-bottom p:hover {
+            background-color:var(--primary-color);
+            color: var(--tertiary-color);
+        }
+    
+    
+    
+    #main-footer {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    margin: -2%;
+    display: flex;
+    }
+    #hr {
+        display: flex;
+        border: 1px;
+        height: 0px;
+        background-color: var(--tertiary-color);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        line-height: 0px;
+    }
+    #main-footer-top {
+        margin:auto;
+        text-align:center;
+    }
+    #main-footer .columns {
+        margin-top: 20px;
+        text-align:center;
+    }
+    #main-footer-container {
+        margin: auto;
+    }
+    
+    #main-footer-img {
+        background:var(--tertiary-color);
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #main-footer-img:hover {
+        background-color: var(--secondary-color);
+    }
+    #main-footer-img .columns{
+        
+        display: flex;
+        text-align: left;
+    }
+    #main-footer-bottom {
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #main-footer-bottom p {
+        font-size: x-small;
+    }
+    #main-footer-bottom .columns {
+            border-right: 1px;
+            border-color: var(--tertiary-color);
+        }
+    
+    /* Navigation */
+    #main-nav a {
+        text-decoration: none; /*Removes underline*/
+        background: steelblue;
+        color: var(--primary-color);
+        padding: 1px;
+        border-radius: 5px;
+    }
+    
+    /* NEED MAIN NAV HOVER STILL*/
+    
+    /* Typography */
+    
+    
+    .columns {
+            display: flex;
     }
     .columns section {
-        padding: 5px 20px;
-        background-color: darkcyan;
-        border: 5px solid darkgoldenrod;
-        
+        border-color: aqua;
+        margin:5px;
     }
-    .one,
-    #main-nav li {
+    .one {
         flex: 1;
+        border-color: aqua;
     }
     .two {
         flex: 2;
     }
+    .three {
+        flex: 3;
+    }
+    .four {
+        flex: 4;
+    }
+    .ten {
+        flex: 10;
+    }
+    
+    
 }
