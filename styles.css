@@ -15,6 +15,7 @@ similar to the example from Jan16, but it was not copy-pasted */
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 20px;
+    flex-wrap: wrap;
 }
 
 /* Navigation */
@@ -49,21 +50,26 @@ h3 {
 
 @media only screen and (min-width: 768px) {
     .columns {
+        
         display: flex;
+        
         column-gap: 10px;
 
         
 
     }
     .columns section {
+        flex-wrap: wrap;
         padding: 5px 20px;
         background-color: darkcyan;
         border: 5px solid darkgoldenrod;
+        
         
     }
     .one,
     #main-nav li {
         flex: 1;
+        flex-wrap: wrap;
     }
     .two {
         flex: 2;
@@ -98,14 +104,17 @@ h3 {
         margin-top: 5px;
         margin-bottom: 5px;
         border-radius: 20px;
+        
     }
-
-    
-}
-img {
+    .columns section {
+        flex-wrap: wrap;
+    }
+.columns img {
     max-width: 300px;
     max-height: 200px;
     min-width: 300px;
     min-height: 200;
     margin: auto;
+}
+    
 }
