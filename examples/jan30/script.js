@@ -7,3 +7,7 @@ const doStuff = () => {
 const hideStrawberry = () => {
     document.getElementById("strawberry").classList.add("hidden");
 }
+
+//////////////
+.src="";
+/////////////
