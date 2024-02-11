@@ -1,77 +1,61 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background: lightgray;
 }
 
 /* Structure */
 #content {
-    background: forestgreen;
-    padding: 5px;
-    width: 80%;
-    margin: auto; /* Centers Horizontally */
-    border-radius: 20px;
+  background: forestgreen;
+  padding: 5px;
+  width: 80%;
+  margin: auto; /* Centers Horizontally */
+  border-radius: 20px;
 }
 
 .padded-area {
-    padding: 5px;
-    margin: auto;
+  padding: 5px;
+  margin: auto;
 }
 
 /* Navigation */
 #main-nav {
-    display: block;
+  display: block;
 }
 
 #main-nav ul {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 #main-nav li {
-    list-style-type: none;
-    
+  list-style-type: none;
 }
 #main-nav a:hover {
-    border-bottom: coral;
-    cursor: pointer;
+  border-bottom: coral;
+  cursor: pointer;
 }
 
 .button {
-    background: transparent;
+  background: transparent;
 }
 #arrow-1 {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid red;
-    cursor: pointer;
-    margin: 5px;
+  cursor: pointer;
+  margin: 5px;
 }
 
 #arrow-2 {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-top: 50px solid blue;
-    cursor: pointer;
-    margin: 5px;
+  cursor: pointer;
+  margin: 5px;
 }
 
-
-.visible {
-    display: block;
-}
 .invisible {
-    display: none;
+  display: none;
 }
 
 /* Typography */
 h1 {
-    color: darkslategray;
-
+  color: darkslategray;
 }
 
 #exercise1 {
-    display:block;
-    border: 10px solid pink;
+  display: block;
+  border: 10px solid pink;
 }
