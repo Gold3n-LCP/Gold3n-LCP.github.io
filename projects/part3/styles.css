@@ -1,282 +1,292 @@
 :root {
-    --primary-color: #a60311;
-    --secondary-color: #000000;
-    --tertiary-color: #FFFFFF;
-    --quaternary-color: #C7C7C7;
-    --quinary-color: #5C5C5C;
-    --senary-color: #ECECEC;
+  --primary-color: #a60311;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #c7c7c7;
+  --quinary-color: #5c5c5c;
+  --senary-color: #ececec;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 #index {
-    background-image: url('images/indexBackground.jpg');
-    text-align: center;
-    h1 {color: var(--primary-color);}
+  background-image: url("images/indexBackground.jpg");
+  text-align: center;
+  h1 {
+    color: var(--primary-color);
+  }
 }
 
 #home {
-    background-image: url('images/homeBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  background-image: url("images/homeBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 
-    button {
-        cursor: pointer;
-        width:200px;
-        height: 50px;
-        background-color: var(--secondary-color);
-        color: var(--tertiary-color);
-        font-size: larger;
-        font-style: italic;
-    }
+  button {
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    font-size: larger;
+    font-style: italic;
+  }
 }
 
 #acdc {
-    background-color: var(--secondary-color);
-    background-image: url('images/acdcBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto;
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  background-color: var(--secondary-color);
+  background-image: url("images/acdcBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 }
 
 #Nirvana {
-    background-color: var(--secondary-color);
-    background-image: url('images/nirvanaBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 600px 600px;
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  background-color: var(--secondary-color);
+  background-image: url("images/nirvanaBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 600px 600px;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 }
 #userInfo {
-    background-color: var(--secondary-color);
-    background-image: url('images/infoBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:cover;
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  background-color: var(--secondary-color);
+  background-image: url("images/infoBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 }
 #aboutMM {
+  background-color: var(--secondary-color);
 
-    background-color: var(--secondary-color);
-    
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 }
 
 #addMusic {
-    background-color: var(--secondary-color);
-    background-image: url('images/addBackground.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size:auto;
-    height: 100vh;
-    h1 {color: var(--primary-color);}
-    p {font-size: larger;}
-    text-align: center;
-    margin-top: 10px;
+  background-color: var(--secondary-color);
+  background-image: url("images/addBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  height: 100vh;
+  h1 {
+    color: var(--primary-color);
+  }
+  p {
+    font-size: larger;
+  }
+  text-align: center;
+  margin-top: 10px;
 }
 
 #add {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 .filler {
-    background: transparent;
-    width:50%;
-    height: 1px;
+  background: transparent;
+  width: 50%;
+  height: 1px;
 }
 .vertSpace {
-    background: transparent;
-    width:10px;
-    height:40%
+  background: transparent;
+  width: 10px;
+  height: 40%;
 }
 
 /* Structure */
 #content {
-    background-color: var(--quaternary-color);
-    width: 50%;
-    min-width: fit-content;
-    padding: 5px;
-    margin: auto; /* Centers Horizontally */
-    border-radius: 5px;
+  background-color: var(--quaternary-color);
+  width: 50%;
+  min-width: fit-content;
+  padding: 5px;
+  margin: auto; /* Centers Horizontally */
+  border-radius: 5px;
 }
 
-#bandInfo
-{
-    position:relative;
-    bottom: 10px;
-    margin: auto;
+#bandInfo {
+  position: relative;
+  bottom: 10px;
+  margin: auto;
 }
 
 #login {
-    
-    background: var(--quaternary-color);
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    margin: auto; /* Center Horizontally */
-    margin-top: 100px;
-    border-radius: 20px;
-    box-shadow:10px 10px 20px var(--secondary-color);
-    flex-wrap: wrap;
-    
+  background: var(--quaternary-color);
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  margin: auto; /* Center Horizontally */
+  margin-top: 100px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px var(--secondary-color);
+  flex-wrap: wrap;
 }
 #loginButton {
-    
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow:10px 10px 20px var(--secondary-color);
-    cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 10px 10px 20px var(--secondary-color);
+  cursor: pointer;
 }
 #addButton {
-    width: 300px;
-    height: 50px;
-    font-size: 20px;
-    margin: auto;
-    margin-top: 100px;
-    box-shadow:10px 10px 20px var(--secondary-color);
-    cursor: pointer;
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 10px 10px 20px var(--secondary-color);
+  cursor: pointer;
 }
-
 
 /* Typography */
 h1 {
-    color: darkslategray;
-
+  color: darkslategray;
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #main-nav ul {
-    background-color: var(--senary-color);
+  background-color: var(--senary-color);
 }
 
 #nav-items li {
-    padding: 15px;
-    text-align: center;
+  padding: 15px;
+  text-align: center;
 }
 
 #hamburger {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
 }
 #hamburger div {
-    width: 50px;
-    height: 6px;
-    background-color: var(--primary-color);
-    margin: 10px;
+  width: 50px;
+  height: 6px;
+  background-color: var(--primary-color);
+  margin: 10px;
 }
 .hide {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
-    /* Hides the hamburger menu on larger resolutions (full screen) */
-    #hamburger {
+  /* Hides the hamburger menu on larger resolutions (full screen) */
+  #hamburger {
     display: none;
-    }
-    /* Everything below this is simply for styling */
-    .flex-container {
+  }
+  /* Everything below this is simply for styling */
+  .flex-container {
     display: flex;
-    }
-    #main-nav li {
-        flex: 1;
-    }
-    #nav-items {
+  }
+  #main-nav li {
+    flex: 1;
+  }
+  #nav-items {
     margin: 0;
     padding: 0;
     text-align: center;
     justify-content: space-evenly;
-    }
+  }
 }
 
 @media only screen and (min-width: 768px) {
-    .columns {
-        
-        display: flex;
-        
-        column-gap: 20px;
+  .columns {
+    display: flex;
 
-        
-
-    }
-    .columns section {
-        flex-wrap: wrap;
-        padding: 5px 20px;
-        
-        
-    }
-    .one,
-    #main-nav li {
-        flex: 1;
-        flex-wrap: wrap;
-    }
-    .two {
-        flex: 2;
-    }
-    
+    column-gap: 20px;
+  }
+  .columns section {
+    flex-wrap: wrap;
+    padding: 5px 20px;
+  }
+  .one,
+  #main-nav li {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  .two {
+    flex: 2;
+  }
 }
 
 .columns {
-        padding: 10px;
-        width: 80%;
-        margin: auto; /* Center Horizontally */
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 20px;
+  padding: 10px;
+  width: 80%;
+  margin: auto; /* Center Horizontally */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-radius: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-    .columns {
-        padding: 10px;
-        width: 80%;
-        margin: auto; /* Center Horizontally */
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 20px;
-        
-    }
-    .columns section {
-        flex-wrap: wrap;
-    }
-.columns img {
+  .columns {
+    padding: 10px;
+    width: 80%;
+    margin: auto; /* Center Horizontally */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+  }
+  .columns section {
+    flex-wrap: wrap;
+  }
+  .columns img {
     margin: auto;
-}
-    
+  }
 }
 
 hr {
-    border: 5px solid var(--primary-color);
+  border: 5px solid var(--primary-color);
 }

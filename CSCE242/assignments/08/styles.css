@@ -1,15 +1,28 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: lightgray;
+  background: #706838;
+  margin: auto;
 }
 
 /* Structure */
 #content {
-  background: forestgreen;
+  background: darkcyan;
   padding: 5px;
-  width: 80%;
+  width: 90%;
   margin: auto; /* Centers Horizontally */
   border-radius: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.img {
+  margin: auto;
+  width: fit-content;
+  max-width: 400px;
+  height: auto;
+}
+
+.columns {
+  display: none;
 }
 
 .padded-area {
@@ -20,6 +33,7 @@ body {
 /* Navigation */
 #main-nav {
   display: block;
+  text-align: left;
 }
 
 #main-nav ul {
@@ -39,11 +53,13 @@ body {
 #arrow-1 {
   cursor: pointer;
   margin: 5px;
+  text-align: left;
 }
 
 #arrow-2 {
   cursor: pointer;
   margin: 5px;
+  text-align: left;
 }
 
 .invisible {
@@ -52,10 +68,90 @@ body {
 
 /* Typography */
 h1 {
-  color: darkslategray;
+  color: salmon;
+}
+h2 {
+  color: rosybrown;
+}
+p {
+  color: #f0cb00;
+}
+ul {
+  list-style: none;
+}
+li {
+  color: antiquewhite;
+  font-size: larger;
+  text-decoration: none;
 }
 
 #exercise1 {
   display: block;
-  border: 10px solid pink;
+  cursor: pointer;
+}
+#exercise2 {
+  display: block;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  #main-nav {
+    display: none;
+  }
+  #arrow-1 {
+    display: none;
+  }
+  #arrow-2 {
+    display: none;
+  }
+
+  .columns {
+    display: flex;
+    padding: 10px;
+    width: 80%;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    margin: auto; /* Center Horizontally */
+    text-align: center;
+    font-size: larger;
+    text-decoration: solid;
+  }
+  .columns section {
+    flex-wrap: wrap;
+    margin: 5px;
+    position: relative;
+    cursor: pointer;
+  }
+  .one {
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  .columns section:not(:first-child)::before {
+    content: "|";
+    position: absolute;
+    top: 50%;
+    right: 90%;
+    transform: translateY(-50%);
+    padding: 10px;
+  }
+  .img {
+    max-width: 700px;
+  }
+}
+
+#slider {
+  appearance: none;
+  width: 90%;
+  margin-bottom: 20px;
+  background-color: #36454f;
+  border: 5px solid salmon;
+}
+#slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: lightyellow;
+  border: 2px solid darkorchid;
 }

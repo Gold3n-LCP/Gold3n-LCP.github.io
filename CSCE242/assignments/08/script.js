@@ -6,16 +6,14 @@ const slideSpan = document.getElementById("slide-value");
 const yogaImg = document.getElementById("yogaImg");
 
 const toggleNav = () => {
-  if (navItems.style.display === "none") {
-    navItems.style.display = "block";
+  if (navItems.classList.contains("invisible")) {
     navItems.classList.remove("invisible");
-    arrow1.style.display = "block";
-    arrow2.style.display = "none";
+    arrow1.classList.add("invisible");
+    arrow2.classList.remove("invisible");
   } else {
-    navItems.style.display = "none";
     navItems.classList.add("invisible");
-    arrow1.style.display = "none";
-    arrow2.style.display = "block";
+    arrow1.classList.remove("invisible");
+    arrow2.classList.add("invisible");
   }
 };
 
@@ -70,9 +68,10 @@ slider.addEventListener("input", () => {
     yogaImg.src = "images/yoga8.jpg";
   }
 });
-document.getElementById("main-nav").onload = startNav;
 document.getElementById("arrow-1").onclick = toggleNav;
 document.getElementById("arrow-2").onclick = toggleNav;
 document.getElementById("txt-comm").onkeyup = showCommand;
 document.getElementById("exercise1").onclick = show1;
+document.getElementById("big1").onclick = show1;
 document.getElementById("exercise2").onclick = show2;
+document.getElementById("big2").onclick = show2;

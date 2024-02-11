@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header id ="main-header" class="padded-area">
+        <header id ="content" class="padded-area">
             <h1>Assignment 8</h1>
             <h2>If Statements</h2>
 
-            <p id="arrow-1" class="invisible">&#9660</p>
-            <p id="arrow-2">&#9650</p>
+            <p id="arrow-1">&#9660</p>
+            <p id="arrow-2" class="invisible">&#9650</p>
             <nav id="main-nav">
                 
                 
@@ -23,10 +23,35 @@
                     <li id = "exercise2">Exercise 2</li>
                 </ul>
             </nav>
-            <div id="ex1" class="ex1">
-                <img id="commImg" src="images/original.jpg" class="commImg">
+
+            <div class="columns">
+                <section id="one">
+                    <p id = "big1">Exercise 1</p>
+                </section>
+                <section id="one">
+                    <p id = "big2">Exercise 2</p>
+                </section>
+            </div>
+        </header>
+            <div id="content">
+                <div id="ex1" class="ex1">
+                <h1>Enter Command</h1>
+                <ul>
+                    <li>b: Read a book</li>
+                    <li>c: Act like a clown</li>
+                    <li>p: Have a birthday party</li>
+                    <li>r: Walk in the rain</li>
+                    <li>s: Shovel up some dirt</li>
+                    <li>w: Go to Work</li>
+                </ul>
                 <label for="txt-comm">Letter: </label>
                 <input id="txt-comm" type="text" placeholder="enter command">
+
+                <div class="img">
+                    <img id="commImg" class="img" src="images/original.jpg" class="commImg">
+                </div>
+                
+                
                 <p>
                     Image by
                     <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
@@ -35,13 +60,19 @@
             </div>
 
             <div id="ex2" class="ex2 invisible">
-                <img id="yogaImg" src="images/yoga1.jpg" class="yogaImg">
-                <input class="slider" type="range" min="0" max="100" value="0">
-                <div class="slide-value">Slider Value: <span id="slide-value"></span>
+                <h1>Yoga Slide</h1>
+                <div class="img">
+                    <img id="yogaImg" class="img" src="images/yoga1.jpg" class="yogaImg">
+                </div>
+                
+                <input class="slider" id="slider" type="range" min="0" max="100" value="0">
+                
                     <p>Image by
                     <a href="https://www.freepik.com/free-vector/hand-drawn-stickman-collection_20856908.htm#query=stick%20figure&position=1&from_view=keyword&track=ais&uuid=12d17ea3-cffc-4386-9be4-ff9dc4b5edc2">Freepik</a>
                     </p>
             </div>
+            </div>
+            
             
 
 
