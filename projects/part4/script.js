@@ -1,6 +1,13 @@
 const toggleHamburger = () => {
   document.getElementById("nav-items").classList.toggle("hide");
 };
+const toggleUser = () => {
+  if (document.getElementById("user-info").classList.contains("hide")) {
+    document.getElementById("user-info").classList.remove("hide");
+  } else {
+    document.getElementById("user-info").classList.add("hide");
+  }
+};
 
 const login = () => {
   window.location.href = "home.html";
@@ -25,4 +32,7 @@ if (document.getElementById("classic-btn")) {
 }
 if (document.getElementById("hamburger")) {
   document.getElementById("hamburger").onclick = toggleHamburger;
+}
+if (document.getElementById("user-div")) {
+  document.getElementById("user-div").onclick = toggleUser;
 }
