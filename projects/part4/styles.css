@@ -5,6 +5,7 @@
   --quaternary-color: #c7c7c7;
   --quinary-color: #5c5c5c;
   --senary-color: #ececec;
+  --octonary-color: #363636;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
-  height: 100vh;
+  height: 150vh;
   h1 {
     color: var(--primary-color);
   }
@@ -67,7 +68,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 600px 600px;
-  height: 100vh;
+  height: 150vh;
   h1 {
     color: var(--primary-color);
   }
@@ -199,19 +200,34 @@ h1 {
 ul {
   list-style-type: none;
 }
-
+#main-nav a {
+  text-decoration: none;
+}
 #main-nav ul {
   position: fixed;
   top: 20px;
   left: 20%;
-  background-color: var(--senary-color);
+  background-color: var(--octonary-color);
   width: 50%;
   margin: auto;
 }
 
 #nav-items li {
   padding: 15px;
+  color: var(--tertiary-color);
+  text-size-adjust: xx-large;
   text-align: center;
+  border: 2px solid var(--senary-color);
+  text-size-adjust: xx-large;
+  margin: 4px;
+
+  list-style-type: none;
+  text-decoration: none;
+}
+#nav-items li:hover {
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  margin: 4px;
 }
 
 #hamburger {
@@ -249,13 +265,25 @@ ul {
   }
 }
 #user-info {
+  flex-wrap: wrap;
   position: fixed;
-  top: 110px;
-  left: 70%;
-  background-color: var(--senary-color);
-  width: fit-content;
+  top: 90px;
+  right: 2%;
+  background-color: var(--octonary-color);
+  width: 50px fit-content;
+  align-content: center;
   text-align: center;
-  margin: auto;
+  color: var(--tertiary-color);
+  li {
+    border: 2px solid var(--senary-color);
+    text-align: center;
+    margin: 5px;
+  }
+  li:hover {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    margin: 5px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -326,4 +354,8 @@ ul {
 
 hr {
   border: 5px solid var(--primary-color);
+}
+#music-notes {
+  position: fixed;
+  bottom: 1%;
 }
