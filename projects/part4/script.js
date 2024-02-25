@@ -3,8 +3,10 @@ const toggleHamburger = () => {
 };
 const toggleUser = () => {
   if (document.getElementById("user-info").classList.contains("hide")) {
+    console.log("REMOVING");
     document.getElementById("user-info").classList.remove("hide");
   } else {
+    console.log("ADDING");
     document.getElementById("user-info").classList.add("hide");
   }
 };
