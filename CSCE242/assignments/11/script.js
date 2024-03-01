@@ -90,7 +90,7 @@ characters.push(
     "Headband, Pauldron, Bracers, Gaiters",
     "A stalwart Hero, at home with a battleaxe, descended from a badlands chieftain",
     "Pure Strength",
-    "HeroClass.jpg"
+    "heroClass.jpg"
   )
 );
 characters.push(
@@ -138,7 +138,7 @@ characters.push(
     "Helm, Armor, Gauntlets, Greaves",
     "A capable fighter from the distant land of reeds. Handy with Katana and Longbows.",
     "Pure Dexterity",
-    "SamuraiClass.jpg"
+    "samuraiClass.jpg"
   )
 );
 characters.push(
