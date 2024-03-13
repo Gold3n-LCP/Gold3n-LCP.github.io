@@ -1,41 +1,42 @@
-:root {
-  --primary: coral;
-  --secondary: cornflowerblue;
-}
-
 /* Structure */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: azure;
 }
 
-#square {
-  --x: 100px;
-  width: var(--x);
-  height: var(--x);
-  margin-top: 10px;
-  background-color: blueviolet;
-}
-
-.drink {
-  background: #fff;
-  padding: 5px;
-  margin: 5px;
-}
-
 h3 {
+  color: rgb(37, 65, 65);
+  text-align: left;
+}
+h1 {
+  color: rgb(12, 6, 70);
   text-align: center;
 }
 
+img {
+  width: 85%;
+  max-height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 .house img {
-  max-width: 40%;
+  width: 250px;
+  height: 150px;
   display: block;
   margin: auto;
 }
-.level img {
-  max-width: 50%;
-  display: block;
-  margin: auto;
+
+#infoSection {
+  background: salmon;
+  align-items: start;
+}
+
+#superSection {
+  background: lightblue;
+  border: 5px solid lightgoldenrodyellow;
+  margin: 10px;
 }
 
 /* Larger Resolutions */
@@ -45,8 +46,12 @@ h3 {
   }
 
   .columns {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Adjust column width as needed */
+    gap: 20px; /* Adjust gap between columns */
   }
   .one {
     flex: 1;
