@@ -16,7 +16,7 @@
       "s9": "Love Hungry Man",
       "s10": "Night Prowler"
     },
-    "link": "https://www.youtube.com/watch?v=l482T0yNkeo",
+    "link": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/l482T0yNkeo?si=nEDzeOdjRsvH8JfF\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>\"
     "band_members": {
       "drummer": "Phill Rudd",
       "lead vocals": "Bon Scott",
@@ -203,7 +203,7 @@
 
   {
     "_id": 8,
-    "img_name": "beatlesBakground.jpg",
+    "img_name": "beatlesBackground.jpg",
     "album_name": "Abbey Road",
     "band_name": "Beatles",
     "song_list": {

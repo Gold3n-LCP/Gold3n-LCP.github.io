@@ -6,6 +6,7 @@
   --quinary-color: #5c5c5c;
   --senary-color: #ececec;
   --octonary-color: #363636;
+  --nonary-color: #9b9603;
 }
 
 body {
@@ -56,9 +57,8 @@ body {
   }
 }
 
-#acdc {
+.acdc {
   background-color: var(--secondary-color);
-  background-image: url("images/acdcBackground.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
@@ -66,12 +66,25 @@ body {
   h1 {
     color: var(--primary-color);
     font-size: 50px;
+    margin-bottom: -25px;
+  }
+  h2 {
+    color: var(--nonary-color);
+    font-size: 40px;
   }
   p {
     font-size: larger;
+    color: var(--tertiary-color);
+  }
+  h3 {
+    color: var(--tertiary-color);
   }
   text-align: center;
   margin-top: 10px;
+  img {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 #Nirvana {
