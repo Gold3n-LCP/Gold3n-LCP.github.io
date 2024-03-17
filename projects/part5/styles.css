@@ -35,7 +35,6 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 100vh;
   h1 {
     color: var(--primary-color);
     font-size: 50px;
@@ -57,12 +56,17 @@ body {
   }
 }
 
+#spotify {
+  width: 150px;
+  height: 50px;
+}
+
 .acdc {
   background-color: var(--secondary-color);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: auto;
-  height: 150vh;
+  height: 200vh;
   h1 {
     color: var(--primary-color);
     font-size: 50px;
@@ -82,8 +86,9 @@ body {
   text-align: center;
   margin-top: 10px;
   img {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
+    display: inline-block;
   }
 }
 
