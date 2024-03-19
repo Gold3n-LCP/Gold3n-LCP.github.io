@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+            Author: Lukas Palassis
+        -->
+    <title>Metal Malitia</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=New+Rocker&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="addMusic">
+    <!--Navigation items-->
+    <nav id="main-nav">
+      <div id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!--Navigation links/list-->
+      <ul id="nav-items" class="flex-container hide">
+        <a href="home.html"><li job="nav">Music Library</li></a>
+        <a href="aboutMM.html"><li job="nav">About Us</li></a>
+        <a href="addMusic.html"><li job="nav">Add Music to our Library</li></a>
+        <li job="nav" id="contact-btn">Contact Metal Malitia</li>
+      </ul>
+    </nav>
+
+    <nav>
+      <div id="userImg" b>
+        <img src="images/userLogo.png" id="user-div" />
+      </div>
+      <ul id="user-info" class="hide">
+        <li>
+          Username: <br />
+          User123
+        </li>
+        <li>
+          Liked Song: <br />
+          Highway to Hell
+        </li>
+        <li>
+          User Addition: <br />
+          Comfortably Numb <br />
+          Pink Floyd
+        </li>
+      </ul>
+    </nav>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div id="login">
+      <h1>Metal Malitia</h1>
+      <h3>Fill out the following information for the greatest album you know</h3>
+    </div>
+
+    <div id="login">
+      <p>
+        Song Name:
+        <input id="txt-color" />
+      </p>
+      <p>
+        Band Name:
+        <input id="txt-color" />
+      </p>
+      <p>
+        Album Title:
+        <input id="txt-color" />
+      </p>
+    </div>
+    <button id="addButton">Submit</button>
+
+
+    <!--
+      /////////////////////////////////////////////////
+    -->
+    <div id="dialog" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="w3-container">
+            <span onclick="document.getElementById('dialog').style.display='none'"
+            class="w3-button w3-display-topright">&times;</span>
+            <section id="dialog-content" class="columns">
+              <section>
+                <img src="">
+              </section>
+              <section id="dialog-details"><h3>Contact Metal Malitia</h3>
+      <div class="columns">
+        <form
+          id="contact-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="e2dea405-8956-4880-80e2-4a4511b0f216"
+          />
+
+          <p>
+            <label for="name">Name:</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="first and last"
+              name="name"
+              required
+            />
+          </p>
+          <p>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required />
+          </p>
+          <p>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </p>
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <input
+            type="hidden"
+            name="subject"
+            value="Contact from MM Website"
+          />
+          <input type="hidden" name="from_name" value="My Website" />
+
+          <p>
+            <button type="submit">Submit Form</button>
+          </p>
+
+          <p id="result">please fill out the information above and then click the <i>SUBMIT</i> button</p>
+        </form></section>
+            </section>
+          </div>
+        </div>
+      </div>
+        </div>
+
+    <script src="script.js"></script>
+    <script src="contactme.js"></script>
+    <script src="form.js"></script>
+  </body>
+</html>
