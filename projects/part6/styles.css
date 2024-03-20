@@ -18,6 +18,18 @@ body {
   font-style: normal;
 }
 
+.form {
+  text-align: left;
+}
+#results {
+  font-size: larger;
+  font-weight: 700;
+}
+
+input[type="text"] {
+  margin-bottom: 10px;
+}
+
 #index {
   background-image: url("images/indexBackground.jpg");
   text-align: center;

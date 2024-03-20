@@ -65,21 +65,111 @@
     </div>
 
     <div id="login">
-      <p>
-        Song Name:
-        <input id="txt-color" />
-      </p>
-      <p>
-        Band Name:
-        <input id="txt-color" />
-      </p>
-      <p>
-        Album Title:
-        <input id="txt-color" />
-      </p>
-    </div>
-    <button id="addButton">Submit</button>
+      <form id="form-album" class="form">
 
+        <p>
+          <label for="album-name">Album Title:</label>
+          <input
+            type="text"
+            id="album-name"
+            album_name ="album-name"
+            required
+            minlength="1"
+          />
+        </p>
+        <br>
+        <p>
+          <label for="band-name">Band Name:</label>
+          <input
+            type="text"
+            id="band-name"
+            album_name ="band-name"
+            required
+            minlength="1"
+          />
+        </p>
+        <br>
+        <p>
+          <div id="member-list">
+            <h3>Members of the Band and their Instrument:</h3>
+          </div>
+          <div id="instrument-list">
+            
+          </div>
+          <button type="button" id="add-member-btn">Add Member</button>
+          <button type="button" id="remove-member-btn">Remove Member</button>
+        
+        </p>
+        <br>
+        <p>
+          <label for="release-date">Release Date:</label>
+          <input type="date" id="release-date" required />
+        </p>
+        <br>
+        <!--Radios-->
+        <h3>Genre:</h3>
+        <p>
+          <input type="radio" name="genre" value="classic" required />
+          <label for="classic" class="inline">Classic Rock</label>
+        </p>
+        <p>
+          <input type="radio" name="genre" value="grunge" required />
+          <label for="grunge" class="inline">Grunge Rock</label>
+        </p>
+        <br>
+        <p>
+          <label for="link">Spotify Link to Most Popular Song:</label>
+          <input type="url" id="link" required />
+        </p>
+        <br>
+        <p>
+          <div id="song-list">
+            <h3>Songs on the Album:</h3>
+          </div>
+          <button type="button" id="add-song-btn">Add Song</button>
+          <button type="button" id="remove-song-btn">Remove Song</button>
+        </p>
+
+        <p>
+          <label for="img">Image of the Album Cover</label>
+          <input type="file" id="img" accept="image/png,image/jpg">
+        </p>
+
+
+
+        <p>
+          <label for="description">A paragraph to describe the band and album</label>
+          <input type="text"
+          type="text"
+            id="description"
+            description ="description"
+            required
+            minlength="15" />
+        </p>
+        <br>
+        <p>
+            <input type="checkbox" required name="terms" /><label
+              for="terms"
+              class="inline"
+              >I agree to the terms.</label
+            >
+          </p>
+          <br>
+          <div id="results">ROCK ON!!!</div>
+          <p>
+            <button type="submit">Submit</button>
+          </p>
+
+      
+      </form>
+      
+
+      
+      
+    </div>
+      
+    
+    
 
     <!--
       /////////////////////////////////////////////////
